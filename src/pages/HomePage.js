@@ -1,4 +1,6 @@
+// HomePage.js
 import React from 'react';
+import './HomePage.css'; // Importez le fichier CSS ici
 
 const HomePage = ({ onSelectPlatform }) => {
     const platforms = ['Netflix', 'Disney+', 'Prime Video', 'OCS']; // Liste des plateformes

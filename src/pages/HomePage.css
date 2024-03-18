@@ -1,0 +1,31 @@
+.HomePage {
+    text-align: center;
+    background-color: black; /* Fond noir */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .platforms {
+    margin-top: 20px;
+  }
+  
+  .platforms button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #ff6347, #ffa500); /* Dégradé de rouge à orange */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .platforms button:hover {
+    background: linear-gradient(to bottom, #cc4b38, #ff7f00); /* Dégradé de rouge foncé à orange foncé */
+  }
+  
