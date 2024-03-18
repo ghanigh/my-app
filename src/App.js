@@ -6,8 +6,6 @@ import './App.css';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedPlatform, setSelectedPlatform] = useState('');
-  const [mood, setMood] = useState('');
-  const [genre, setGenre] = useState('');
 
   const handlePlatformSelect = (platform) => {
     setSelectedPlatform(platform);
@@ -15,12 +13,8 @@ function App() {
   };
 
   const handlePreferencesSubmit = (mood, genre) => {
-    setMood(mood);
-    setGenre(genre);
-    // Ici, vous pouvez implémenter la logique pour afficher les recommandations en fonction de la plateforme, de l'humeur et du genre choisis
-    console.log('Plateforme sélectionnée:', selectedPlatform);
-    console.log('Humeur sélectionnée:', mood);
-    console.log('Genre sélectionné:', genre);
+    setSelectedPlatform('');
+    setCurrentPage('duration');
   };
 
   const handleDurationSelect = (duration) => {

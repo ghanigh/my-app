@@ -1,23 +1,28 @@
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const CombienDeTemps = () => {
-  const history = useHistory();
+const CombienDeTemps = ({ onDurationSelect, onBackButtonClick }) => {
+  const navigate = useNavigate();
 
-  const handleDurationSelect = () => {
-    // Mettre à jour l'état ou exécuter toute logique supplémentaire si nécessaire
+  const handleDurationSelect = (duration) => {
+    onDurationSelect(duration);
+    navigate('/');
+  };
 
-    // Rediriger vers la page PreferencesPage
-    history.push('/preferences');
+  const handleBackButtonClick = () => {
+    onBackButtonClick();
+    navigate('/');
   };
 
   return (
     <div>
-      <h1>Choisissez la durée de votre session :</h1>
-      <button onClick={handleDurationSelect}>30 minutes</button>
-      <button onClick={handleDurationSelect}>45 minutes</button>
-      <button onClick={handleDurationSelect}>+1h30</button>
-      <button onClick={() => history.push('/')}>Retour</button>
+      <h1>Combien de temps ?</h1>
+      <div>
+        <button onClick={() => handleDurationSelect(1)}>1 heure</button>
+        <button onClick={() => handleDurationSelect(2)}>2 heures</button>
+        <button onClick={() => handleDurationSelect(3)}>3 heures</button>
+      </div>
+      <button onClick={handleBackButtonClick}>Retour</button>
     </div>
   );
 };
