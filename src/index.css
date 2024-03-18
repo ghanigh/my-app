@@ -1,13 +1,50 @@
+/* HomePage.css */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #141414; /* Fond sombre */
+  color: #fff; /* Texte blanc */
+  font-family: Arial, sans-serif;
+  display: flex; /* Utiliser Flexbox pour centrer les éléments */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  height: 100vh; /* Pleine hauteur de la fenêtre */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  text-align: center; /* Centrer le contenu */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Ajouter de la marge en bas du titre */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Utiliser Flexbox pour afficher les boutons en ligne */
+  justify-content: center; /* Centrer horizontalement les boutons */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des boutons */
+}
+
+li {
+  margin: 0 5px; /* Marge entre les boutons */
+}
+
+button {
+  background: linear-gradient(to right, #e50914, #ff8000); /* Dégradé de rouge à orange */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation de transition */
+  flex: 1; /* Chaque bouton prend la moitié de la largeur de son conteneur */
+  max-width: calc(50% - 10px); /* Largeur maximale pour chaque bouton */
+  width: 100%; /* Largeur de fond de 100% pour remplir tout le bouton */
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff0000, #ff6600); /* Dégradé de rouge à orange plus clair au survol */
 }
