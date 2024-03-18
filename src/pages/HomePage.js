@@ -1,4 +1,3 @@
-// HomePage.js
 import React from 'react';
 import './HomePage.css'; // Importez le fichier CSS ici
 
@@ -10,7 +9,7 @@ const HomePage = ({ onSelectPlatform }) => {
     };
 
     return (
-        <div>
+        <div className="HomePage"> {/* Ajoutez la classe CSS ici */}
             <h1>Choisissez votre plateforme de streaming :</h1>
             <div className="platforms">
                 {platforms.map(platform => (

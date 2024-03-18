@@ -1,6 +1,5 @@
 .HomePage {
     text-align: center;
-    background-color: black; /* Fond noir */
     min-height: 100vh;
     display: flex;
     flex-direction: column;

@@ -16,14 +16,14 @@ const CombienDeTemps = ({ onDurationSelect, onBackButtonClick }) => {
   };
 
   return (
-    <div>
+    <div className="CombienDeTemps"> {/* Ajoutez la classe CSS ici */}
       <h1>Combien de temps ?</h1>
       <div>
         <button onClick={() => handleDurationSelect(1)}>1 heure</button>
         <button onClick={() => handleDurationSelect(2)}>2 heures</button>
         <button onClick={() => handleDurationSelect(3)}>3 heures</button>
       </div>
-      <button onClick={handleBackButtonClick}>Retour</button>
+      <button className="back-button" onClick={handleBackButtonClick}>Retour</button> {/* Ajoutez la classe CSS ici */}
     </div>
   );
 };
