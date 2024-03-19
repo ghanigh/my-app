@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CombienDeTemps.css'; // Importez le fichier CSS ici
 
+
 const CombienDeTemps = ({ onDurationSelect, onBackButtonClick }) => {
     const navigate = useNavigate();
 
@@ -19,9 +20,9 @@ const CombienDeTemps = ({ onDurationSelect, onBackButtonClick }) => {
         <div className="CombienDeTemps"> {/* Ajoutez la classe CSS ici */}
             <h1>Combien de temps ?</h1>
             <div>
-                <button onClick={() => handleDurationSelect(1)}>1 heure</button>
-                <button onClick={() => handleDurationSelect(2)}>2 heures</button>
-                <button onClick={() => handleDurationSelect(3)}>3 heures</button>
+                <button onClick={() => handleDurationSelect(1)}>30 minutes</button>
+                <button onClick={() => handleDurationSelect(2)}>1 heures</button>
+                <button onClick={() => handleDurationSelect(3)}>2 heures</button>
             </div>
             <button className="back-button" onClick={handleBackButtonClick}>Retour</button> {/* Ajoutez la classe CSS ici */}
         </div>

@@ -27,17 +27,26 @@ body {
     cursor: pointer;
   }
   
-  button.back-button {
-    margin: 5px; /* Marge réduite pour espacement */
-    padding: 8px 16px; /* Taille de padding réduite */
-    font-size: 14px; /* Taille de police réduite */
-    background: linear-gradient(to bottom, #4682b4, #1e90ff); /* Dégradé de bleu à bleu clair */
-    border-radius: 3px; /* Coins légèrement arrondis */
-    transition: background 0.3s ease; /* Transition fluide lors du survol */
+  button {
+    margin: 10px;
+    padding: 10px 30px; /* Ajustez la largeur du padding pour allonger les boutons */
+    font-size: 16px;
+    background: linear-gradient(to bottom, #ff6347, #ffa500); /* Dégradé de rouge à orange */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
-  button.back-button:hover {
-    background: linear-gradient(to bottom, #357ebd, #187bcd); /* Dégradé de bleu foncé à bleu clair foncé */
-    transform: translateY(2px); /* Décalage vers le bas au survol */
+  button.back-button {
+    margin: 5px; /* Marge réduite pour espacement */
+    padding: 8px 30px; /* Ajustez la largeur du padding pour allonger le bouton de retour */
+    font-size: 14px; /* Taille de police réduite */
+    background: linear-gradient(to bottom, #4682b4, #1e90ff); /* Dégradé de bleu à bleu clair */
+    color: #fff; /* Texte blanc */
+    border: none;
+    border-radius: 3px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transition fluide lors du survol */
   }
   

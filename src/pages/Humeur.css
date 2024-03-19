@@ -32,21 +32,28 @@ body {
   }
   
   button {
-    background: linear-gradient(to right, #e50914, #ff8000); /* Dégradé de rouge à orange */
+    margin: 10px;
+    padding: 10px 30px; /* Ajustez la largeur du padding pour allonger les boutons */
+    font-size: 16px;
+    background: linear-gradient(to bottom, #ff6347, #ffa500); /* Dégradé de rouge à orange */
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Animation de transition */
-    flex: 1; /* Chaque bouton prend la moitié de la largeur de son conteneur */
-    max-width: calc(50% - 10px); /* Largeur maximale pour chaque bouton */
-    width: 100%; /* Largeur de fond de 100% pour remplir tout le bouton */
   }
   
-  button:hover {
-    background: linear-gradient(to right, #ff0000, #ff6600); /* Dégradé de rouge à orange plus clair au survol */
+  button.back-button {
+    margin: 5px; /* Marge réduite pour espacement */
+    padding: 8px 30px; /* Ajustez la largeur du padding pour allonger le bouton de retour */
+    font-size: 14px; /* Taille de police réduite */
+    background: linear-gradient(to bottom, #4682b4, #1e90ff); /* Dégradé de bleu à bleu clair */
+    color: #fff; /* Texte blanc */
+    border: none;
+    border-radius: 3px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transition fluide lors du survol */
   }
+  
+  
   
   

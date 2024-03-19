@@ -1,30 +1,56 @@
+body {
+  background-color: #141414; /* Fond sombre */
+  color: #fff; /* Texte blanc */
+  font-family: Arial, sans-serif;
+  display: flex; /* Utiliser Flexbox pour centrer les éléments */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  height: 100vh; /* Pleine hauteur de la fenêtre */
+}
+
 .HomePage {
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
+  text-align: center; /* Centrer le contenu */
+}
+
+.logo {
+  width: 100px; /* Largeur du logo */
+  margin-bottom: 20px; /* Marge en bas du logo */
+}
+
+@media (max-width: 768px) {
+  .logo {
+      width: 80px; /* Largeur du logo pour les écrans de taille moyenne */
   }
-  
-  .platforms {
-    margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+      width: 60px; /* Largeur du logo pour les petits écrans */
   }
-  
-  .platforms button {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background: linear-gradient(to bottom, #ff6347, #ffa500); /* Dégradé de rouge à orange */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .platforms button:hover {
-    background: linear-gradient(to bottom, #cc4b38, #ff7f00); /* Dégradé de rouge foncé à orange foncé */
-  }
-  
+}
+
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Ajouter de la marge en bas du titre */
+}
+
+.platforms {
+  margin-top: 20px; /* Ajouter de la marge en haut des boutons */
+}
+
+.platforms button {
+  margin-right: 10px; /* Marge à droite des boutons */
+  margin-bottom: 10px; /* Marge en bas des boutons */
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #ff6347, #ffa500); /* Dégradé de rouge à orange */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.platforms button:hover {
+  background: linear-gradient(to bottom, #cc4b38, #ff7f00); /* Dégradé de rouge foncé à orange foncé */
+}

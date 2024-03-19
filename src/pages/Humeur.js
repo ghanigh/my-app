@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Humeur.css'; // Importez le fichier CSS ici
 
+
 const Humeur = ({ onMoodSelect }) => {
     const navigate = useNavigate();
 
@@ -11,7 +12,7 @@ const Humeur = ({ onMoodSelect }) => {
     };
 
     const handleBackButtonClick = () => {
-        navigate('/combien-de-temps'); // Redirection vers la page CombienDeTemps.js
+        navigate(-1); // Revenir en arrière dans l'historique des pages
     };
 
     return (
