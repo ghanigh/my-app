@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import HomePage from './pages/HomePage';
 import CombienDeTemps from './pages/CombienDeTemps';
+import Humeur from './pages/Humeur'; // Importez la page Humeur
+
 import './App.css';
 
 function App() {
@@ -18,8 +20,7 @@ function App() {
   };
 
   const handleDurationSelect = (duration) => {
-    // Vous pouvez ajouter ici la logique pour gérer la durée sélectionnée
-    console.log('Durée sélectionnée:', duration);
+    setCurrentPage('mood'); // Rediriger l'utilisateur vers la page Humeur
   };
 
   const handleBackButtonClick = () => {
@@ -30,6 +31,7 @@ function App() {
     <div className="App">
       {currentPage === 'home' && <HomePage onSelectPlatform={handlePlatformSelect} />}
       {currentPage === 'duration' && <CombienDeTemps onDurationSelect={handleDurationSelect} onBackButtonClick={handleBackButtonClick} />}
+      {currentPage === 'mood' && <Humeur />} {/* Afficher la page Humeur lorsque la page mood est active */}
     </div>
   );
 }
