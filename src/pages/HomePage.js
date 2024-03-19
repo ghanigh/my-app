@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomePage.css'; // Importez le fichier CSS ici
-import logo from './showfinder_logo.jpg'; // Importez votre logo ici
+import logo from './showfinder_logo.png'; // Importez votre logo ici
 
 const HomePage = ({ onSelectPlatform }) => {
     const platforms = ['Netflix', 'Disney+', 'Prime Video', 'OCS']; // Liste des plateformes
