@@ -1,3 +1,4 @@
+/* Humeur.css */
 body {
   background-color: #141414; /* Fond sombre */
   color: #fff; /* Texte blanc */
@@ -8,6 +9,52 @@ body {
   height: 100vh; /* Pleine hauteur de la fenêtre */
 }
 
+.Humeur {
+  text-align: center; /* Centrer le contenu */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Ajouter de la marge en bas du titre */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Utiliser Flexbox pour afficher les boutons en ligne */
+  justify-content: center; /* Centrer horizontalement les boutons */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des boutons */
+}
+
+li {
+  margin: 0 5px; /* Marge entre les boutons */
+}
+
+button {
+  margin: 10px;
+  padding: 10px 30px; /* Ajustez la largeur du padding pour allonger les boutons */
+  font-size: 16px;
+  background: linear-gradient(to bottom, #ff6347, #ffa500); /* Dégradé de rouge à orange */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.back-button {
+  margin: 5px; /* Marge réduite pour espacement */
+  padding: 8px 30px; /* Ajustez la largeur du padding pour allonger le bouton de retour */
+  font-size: 14px; /* Taille de police réduite */
+  background: linear-gradient(to bottom, #4682b4, #1e90ff); /* Dégradé de bleu à bleu clair */
+  color: #fff; /* Texte blanc */
+  border: none;
+  border-radius: 3px; /* Coins légèrement arrondis */
+  cursor: pointer;
+  transition: background 0.3s ease; /* Transition fluide lors du survol */
+}
+
+
+/* HomePage.css */
 .HomePage {
   text-align: center; /* Centrer le contenu */
 }
