@@ -8,7 +8,7 @@ const HomePage = ({ onSelectPlatform }) => { // Déclaration du composant HomePa
     const platforms = ['Netflix', 'Disney+', 'Prime Video', 'OCS']; // Liste des plateformes de streaming disponibles
 
     const handlePlatformSelect = (platform) => { // Fonction appelée lorsqu'une plateforme est sélectionnée
-        onSelectPlatform(platform); // Appel de la fonction onSelectPlatform avec la plateforme sélectionnée comme argument
+        onSelectPlatform(platform); // Appel de la fonction onSelectPlatform avec la plateforme sélectionnée comme
     };
 
     return (
